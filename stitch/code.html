@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Soothe Sanctuary | Your Comfort, Curated</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "tertiary": "#5e5f60",
+              "on-primary": "#fff6f1",
+              "secondary": "#625f59",
+              "on-primary-fixed": "#4b3d30",
+              "secondary-fixed-dim": "#d9d3cd",
+              "tertiary-dim": "#525354",
+              "surface-container-high": "#e6e9e4",
+              "error-container": "#fe8b70",
+              "surface-variant": "#e0e4de",
+              "on-background": "#2f3430",
+              "on-primary-container": "#5e4f41",
+              "inverse-on-surface": "#9d9d9a",
+              "on-surface-variant": "#5c605c",
+              "inverse-primary": "#fbe4d2",
+              "on-tertiary-container": "#5a5c5c",
+              "surface-container-lowest": "#ffffff",
+              "surface-container": "#edeeea",
+              "secondary-fixed": "#e8e2db",
+              "surface-dim": "#d6dbd5",
+              "secondary-dim": "#56534d",
+              "primary-container": "#f5decd",
+              "on-secondary-fixed-variant": "#5e5b56",
+              "surface-tint": "#6c5b4d",
+              "on-secondary": "#fef8f1",
+              "on-error-container": "#742410",
+              "primary": "#6c5b4d",
+              "background": "#faf9f6",
+              "on-surface": "#2f3430",
+              "surface-bright": "#faf9f6",
+              "on-tertiary-fixed": "#484a4a",
+              "error": "#9e422c",
+              "outline": "#777c77",
+              "on-tertiary": "#f9f9f9",
+              "surface": "#faf9f6",
+              "on-secondary-fixed": "#423f3a",
+              "outline-variant": "#afb3ae",
+              "on-tertiary-fixed-variant": "#656667",
+              "on-secondary-container": "#54514c",
+              "primary-fixed-dim": "#e7d0bf",
+              "error-dim": "#5c1202",
+              "inverse-surface": "#0d0f0d",
+              "tertiary-container": "#f3f3f3",
+              "on-error": "#fff7f6",
+              "tertiary-fixed": "#f3f3f3",
+              "primary-fixed": "#f5decd",
+              "primary-dim": "#5f5042",
+              "tertiary-fixed-dim": "#e5e5e5",
+              "secondary-container": "#e8e2db",
+              "surface-container-low": "#f4f4f0",
+              "surface-container-highest": "#e0e4de",
+              "on-primary-fixed-variant": "#69594b"
+            },
+            fontFamily: {
+              "headline": ["Manrope"],
+              "body": ["Plus Jakarta Sans"],
+              "label": ["Plus Jakarta Sans"]
+            },
+            borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #faf9f6;
+        }
+        h1, h2, h3 {
+            font-family: 'Manrope', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#faf9f6]/80 dark:bg-[#0d0f0d]/80 backdrop-blur-md shadow-sm dark:shadow-none">
+<div class="flex justify-between items-center px-8 py-6 max-w-full mx-auto">
+<div class="text-2xl font-bold tracking-tighter text-[#6c5b4d] dark:text-[#D9C5B2] font-manrope">
+                Soothe
+            </div>
+<!-- Navigation Links -->
+<div class="hidden md:flex items-center gap-8">
+<a class="font-manrope tracking-tight text-sm uppercase font-semibold text-[#6c5b4d] dark:text-[#D9C5B2] border-b-2 border-[#6c5b4d] dark:border-[#D9C5B2] pb-1 hover:opacity-80 transition-opacity duration-300" href="#">Shop</a>
+<a class="font-manrope tracking-tight text-sm uppercase font-semibold text-[#5c605c] dark:text-[#afb3ae] hover:text-[#6c5b4d] hover:opacity-80 transition-opacity duration-300" href="#">Collections</a>
+<a class="font-manrope tracking-tight text-sm uppercase font-semibold text-[#5c605c] dark:text-[#afb3ae] hover:text-[#6c5b4d] hover:opacity-80 transition-opacity duration-300" href="#">Best Sellers</a>
+<a class="font-manrope tracking-tight text-sm uppercase font-semibold text-[#5c605c] dark:text-[#afb3ae] hover:text-[#6c5b4d] hover:opacity-80 transition-opacity duration-300" href="#">About</a>
+</div>
+<!-- Trailing Icons -->
+<div class="flex items-center gap-6 text-[#6c5b4d] dark:text-[#D9C5B2]">
+<button class="scale-95 active:scale-100 transition-transform hover:opacity-80">
+<span class="material-symbols-outlined">person</span>
+</button>
+<button class="scale-95 active:scale-100 transition-transform hover:opacity-80">
+<span class="material-symbols-outlined">shopping_cart</span>
+</button>
+</div>
+</div>
+</nav>
+<main class="pt-24">
+<!-- Hero Section -->
+<section class="px-8 pb-24">
+<div class="relative w-full aspect-[21/9] rounded-xl overflow-hidden group">
+<img class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 ease-in-out" data-alt="Luxurious minimalist bedroom with soft beige linen bedding and an arrangement of plush velvet and silk cushions in warm neutral tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD04IpRjZnl-tlAdd2gNMpVEmntzZ_PteOA5rsawn7psKjKYrX0HvQ2hnYMUq0CnCTkSPgyHuLf9rrUlkf6Bs5Mb1o1JvJR9W2ZucOhgGzk0JExORPkGYp0ETkmFTESUbnx_MH2NJDW_FQVDXcBvLwFblI-iNHYgQvG9np-oQdfATu7kUUBN4HjZyjAXAUQxCI9iqmGCs3TG5yOpbH84r3_is_793sXpTYq9_mSoL1zMRc_D8jvTHrf_agr9KGUGPIEze9hRljVJ1UV"/>
+<div class="absolute inset-0 bg-gradient-to-r from-on-background/40 to-transparent flex items-center px-16">
+<div class="max-w-2xl">
+<span class="inline-block px-4 py-1.5 rounded-full bg-surface-container-lowest/20 backdrop-blur-md text-on-primary text-xs font-semibold tracking-widest uppercase mb-6">Premium Sanctuary</span>
+<h1 class="text-6xl md:text-8xl font-extrabold text-on-primary leading-[0.9] tracking-tighter mb-8">
+                            Your Comfort,<br/>Curated.
+                        </h1>
+<p class="text-xl text-on-primary/90 font-light mb-10 max-w-lg leading-relaxed">
+                            Experience the intersection of architectural precision and tactile softness with our boutique pillow collection.
+                        </p>
+<button class="bg-primary text-on-primary px-10 py-5 rounded-full font-semibold hover:bg-primary-dim transition-all shadow-xl shadow-primary/20 flex items-center gap-3 group">
+                            Explore Collections
+                            <span class="material-symbols-outlined text-xl group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Category Bento -->
+<section class="px-8 py-12 max-w-7xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+<!-- Silk -->
+<div class="md:col-span-8 group relative h-[500px] rounded-xl overflow-hidden cursor-pointer">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Close-up detail of a smooth mulberry silk pillowcase in cream color reflecting soft morning sunlight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAyKNZEu043rsV6RG18ZwZG1rOfvwMSN69OZLS-YQAO_QFaY7vNYmLhzojiW2n9B8_8l1QXMlIgY4CiMwigGjNEgghznqqxJikTF79e2dD5KPRA1_35uZ44a8pxTIIK-UYN3ppRjmnbTtGZs8IxgcBzNUNj0HmKnt0c1yqRutU-sgpUB66V2OZOidaSJYthwzXMscdatl8vGfULFXTFzz2_7aYu12b98KFJS-v6Fc36_LeS3wyF3vlxtyul47cLd_A2xtAcG3GqWOXF"/>
+<div class="absolute inset-0 bg-black/10 group-hover:bg-black/20 transition-colors"></div>
+<div class="absolute bottom-10 left-10 text-white">
+<h3 class="text-4xl font-bold mb-2">Silk Pillows</h3>
+<p class="text-lg opacity-90">Hypoallergenic cooling elegance.</p>
+</div>
+</div>
+<!-- Velvet -->
+<div class="md:col-span-4 group relative h-[500px] rounded-xl overflow-hidden cursor-pointer">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Rich velvet decorative cushions in forest green and terracotta stacked on a light oak bench" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDsi3TG6q9N4iv_2SNS39LERO1FB0d0sb1pwecc9uBDxnjg01EyXtAesFhTuIhsDwowkqTOACxN9zTnmnzlTqzGX8fRFDZBT1xlWVdhmmIQqSfQlA1kIAitvXqotCkCOqiMFNEbgCpSWbqIchYa5kKq3v9lOeLb88OHOYPSQf2MfpAWlx-aFGWLbnNqVKrLJhyHWitl9Ffzz4buCooVPBtZZ_u-hE3JPoPFeGPHTXi938YZtQq6fFfMY2adlEOo2CVe3ecqcF1Hv4Gd"/>
+<div class="absolute inset-0 bg-black/10 group-hover:bg-black/20 transition-colors"></div>
+<div class="absolute bottom-10 left-10 text-white">
+<h3 class="text-3xl font-bold mb-2">Velvet Cushions</h3>
+<p class="text-sm opacity-90">Deep textures for tactile spaces.</p>
+</div>
+</div>
+<!-- Sleeping Essentials -->
+<div class="md:col-span-12 group relative h-[400px] rounded-xl overflow-hidden cursor-pointer">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="A clean modern bedroom with crisp white sleeping pillows and a soft linen throw on a contemporary bed" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAhgBj4yCk69InpduMOFBt9QgROq7vwjD6GEAVkSpM0Gk2yyIcmVoVr_TlD7sOOVtyy9kahfnapbWZlsusaD5GBL-6HUUsmz7FbLJi5EuZ3kMdekQCxPh9ozIZLqQk9C0YNOM_HBAgeYdsUanE3tUHmS3rm62h-CGQo19EqJ9l_l3WojtNRRa3CeQgPiE8LUByokxDSLo_cN3Z5bdvpaMprQ199NQ-om_mtXOJIOUA5njoYRd8cDJYOEkO60_vRSZ0tgnwLytDqmH6x"/>
+<div class="absolute inset-0 bg-black/5 group-hover:bg-black/15 transition-colors"></div>
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center text-white">
+<h3 class="text-5xl font-bold mb-4">Sleeping Essentials</h3>
+<div class="w-16 h-1 bg-white mx-auto rounded-full group-hover:w-32 transition-all duration-300"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Product Grid -->
+<section class="px-8 py-24 bg-surface-container-low">
+<div class="max-w-7xl mx-auto">
+<div class="flex justify-between items-end mb-16">
+<div>
+<span class="text-secondary uppercase tracking-widest text-xs font-bold block mb-4">The Selection</span>
+<h2 class="text-5xl font-extrabold tracking-tighter">Bestselling Comfort</h2>
+</div>
+<button class="text-primary font-bold flex items-center gap-2 hover:gap-4 transition-all">
+                        View All Products <span class="material-symbols-outlined">east</span>
+</button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+<!-- Product 1 -->
+<div class="group">
+<div class="aspect-square bg-white rounded-full p-4 overflow-hidden mb-8 shadow-sm group-hover:shadow-xl transition-all duration-500 relative">
+<img class="w-full h-full object-cover rounded-full group-hover:scale-110 transition-transform duration-700" data-alt="A singular ivory round pillow with button-tufted center sitting on a clean white surface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB6w1P6Uzv3pNWCPQX0IVyOZzzAu1CgzwU8qiMA0eIGMXANvLgMUPoAKSkOhHHn3sQHVmYOXYj6o_hsy7LjCXDrJ3VeY2jtUSaPQaxfaKKB6alvxFU40E-7SsGA88_NVmbib6WCBXnKJjWE3rSNBQNsuY5eboopqbrlfx8LM5E_LZtVIUSoAOTVnbsye76ElxUE-d1wNc7_966J4MrFs9s1pK6UXvTv40oPmE3Pbra0MlFn7S8vU7ctU8LybWoIdD1JdGdk61AS9BR3"/>
+<button class="absolute bottom-8 right-8 bg-surface-bright p-4 rounded-full shadow-lg opacity-0 group-hover:opacity-100 transition-opacity translate-y-4 group-hover:translate-y-0 duration-300">
+<span class="material-symbols-outlined text-primary">add_shopping_cart</span>
+</button>
+</div>
+<div class="text-center px-4">
+<h4 class="text-xl font-bold text-on-surface mb-2">The Cloud Tufted Cushion</h4>
+<p class="text-on-surface-variant font-medium mb-4">Ivory Velvet / 18"</p>
+<span class="text-2xl font-bold text-primary">$89.00</span>
+</div>
+</div>
+<!-- Product 2 -->
+<div class="group">
+<div class="aspect-square bg-white rounded-full p-4 overflow-hidden mb-8 shadow-sm group-hover:shadow-xl transition-all duration-500 relative">
+<img class="w-full h-full object-cover rounded-full group-hover:scale-110 transition-transform duration-700" data-alt="A pair of rectangular mulberry silk pillowcases in a soft slate gray color" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAGcA3-DzpWK2kT8H470fiImdCAEyy0EJmAgQeVpTnx5DJ_0uKkPzdzO-nUnqTvFaCLiBnfD2h7ZkvaR-Oc58Fk0zfL8plIjzEJk21YyrCwkHi18JkCiGhVyH1EoPjukHyzrPVrnJrb_VmoD2yAn0p-aJT_I5VRFNBolFQBhg22XkvEbvYwLFs0CO_J2_b0XKmmS_o65sY_PBHjHMusmC_Hg-Ah2PAiOlbmh3ololgHYFitWMVMK6712wk5JMt9rHiQsNd0d7A4uCtL"/>
+<button class="absolute bottom-8 right-8 bg-surface-bright p-4 rounded-full shadow-lg opacity-0 group-hover:opacity-100 transition-opacity translate-y-4 group-hover:translate-y-0 duration-300">
+<span class="material-symbols-outlined text-primary">add_shopping_cart</span>
+</button>
+</div>
+<div class="text-center px-4">
+<h4 class="text-xl font-bold text-on-surface mb-2">Luxe Silk Dream Set</h4>
+<p class="text-on-surface-variant font-medium mb-4">Slate Grey / Pair</p>
+<span class="text-2xl font-bold text-primary">$145.00</span>
+</div>
+</div>
+<!-- Product 3 -->
+<div class="group">
+<div class="aspect-square bg-white rounded-full p-4 overflow-hidden mb-8 shadow-sm group-hover:shadow-xl transition-all duration-500 relative">
+<img class="w-full h-full object-cover rounded-full group-hover:scale-110 transition-transform duration-700" data-alt="An oversized ergonomic lumbar support pillow in a soft oatmeal textured knit fabric" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBLYdPgjDgRrgu2sS5N1j6ElbY50A_dA1Fh2C7L6haxrhwpGQNJbwQ51kkkpjkBBgzCPtjcCbimRoR--wcU4ffoaaFjdviC-MdYXsfnZW4fRGbQAE5xFFbgogVw8PreApWBR2GV9C8HCSevd9oOImW6oVtTjQqI6dcs80qJIk41b1TZ4rxHzb1U55dDO2q45uz5-jfuKi-xZwF4PFRtjvYcrbfQgTRDMxzXSFxfcmM4IiVxm-Mu80rQjIQIgqzRQhRHBuPExkcWVtZi"/>
+<button class="absolute bottom-8 right-8 bg-surface-bright p-4 rounded-full shadow-lg opacity-0 group-hover:opacity-100 transition-opacity translate-y-4 group-hover:translate-y-0 duration-300">
+<span class="material-symbols-outlined text-primary">add_shopping_cart</span>
+</button>
+</div>
+<div class="text-center px-4">
+<h4 class="text-xl font-bold text-on-surface mb-2">The Sculpt Lumbar</h4>
+<p class="text-on-surface-variant font-medium mb-4">Oatmeal Knit / 24x12"</p>
+<span class="text-2xl font-bold text-primary">$110.00</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonials -->
+<section class="py-32 px-8">
+<div class="max-w-3xl mx-auto text-center">
+<span class="material-symbols-outlined text-5xl text-primary-container mb-12" style="font-variation-settings: 'FILL' 1;">format_quote</span>
+<p class="text-3xl md:text-4xl font-headline italic font-light leading-snug text-on-surface mb-12">
+                    "Soothe has completely redefined my evenings. The textures are unparalleled, and the aesthetic fits perfectly with my minimalist home."
+                </p>
+<div class="flex items-center justify-center gap-4">
+<div class="w-12 h-12 rounded-full overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Portrait of a sophisticated woman smiling softly in a brightly lit room" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCcn2ceO7TFg7ptz0HIdGMl9L7vESwtq42qbOdUqEgIPLJwNmTCMb0y5chg_arziKlepLqGC_sCBTer_6h32r4UPlEbImaZJp9hmsDQD5rRadaM_5aJKdKGDFRom_CJSv9iwhQYTUNSc0EsGKy05xu9MTm6WpFtl-bGUjZVDzOfkfThtoeOnpUedkGlRIgoTpMTgAvOr3LR7uKFYeiqU656u9-xAWRVI013w_t_W-hWqPG2XzGcf2S6pzQO4ccEIWvj1lVUHK1zVY5_"/>
+</div>
+<div class="text-left">
+<p class="font-bold text-on-surface">Eleanor Vance</p>
+<p class="text-on-surface-variant text-sm">Interior Stylist</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Newsletter / Texture Section -->
+<section class="px-8 pb-12">
+<div class="bg-surface-container-highest rounded-xl p-16 md:p-24 flex flex-col md:flex-row items-center gap-16 relative overflow-hidden">
+<div class="absolute -right-24 -top-24 w-96 h-96 bg-primary-container/20 rounded-full blur-3xl"></div>
+<div class="z-10 flex-1">
+<h2 class="text-5xl font-extrabold tracking-tight mb-6">Stay in the Soft Loop.</h2>
+<p class="text-lg text-on-surface-variant mb-10 max-w-md">Join our inner circle for exclusive early access to seasonal color drops and sanctuary tips.</p>
+<div class="flex flex-col sm:flex-row gap-4 max-w-lg">
+<input class="flex-1 bg-surface-container-low border-none rounded-full px-8 py-5 focus:ring-2 focus:ring-primary/20 placeholder:text-outline text-on-surface" placeholder="Email Address" type="email"/>
+<button class="bg-primary text-on-primary px-10 py-5 rounded-full font-bold hover:bg-primary-dim transition-all">Join Us</button>
+</div>
+</div>
+<div class="flex-1 w-full max-w-md">
+<div class="aspect-square rounded-xl overflow-hidden shadow-2xl rotate-3">
+<img class="w-full h-full object-cover" data-alt="Macro detail shot of soft boucle fabric texture in a light cream color with organic woven patterns" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDA2sZEUvukXs6lFuhAuAtiRty1XQ9NmfLgBn8k3Golf-aBRXQc9mHxA_xSk520Qf8Xz11bOWgMZ1oK4ovORTR-9-iJ-PEaUO4TZIOkDF73hnhcplvkP0bq4zKudHW4eTNwV32akVgPY_lXLADGT1mBN2nfwspI49UXJD4ds0v75yryMQ0wlPWKS2JPWpC8oWufiJ_eCAU6Qyk4kM7IULvdZ14jXnIYHtsrBSEtD94DBKZmN6QcUttRV1FX6kFwbroJ0dta6Qn7YnCh"/>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full rounded-t-[3rem] mt-24 bg-[#edeeea] dark:bg-[#1a1c1a]">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-12 px-12 py-20 max-w-7xl mx-auto">
+<div class="col-span-2 md:col-span-1">
+<div class="text-xl font-bold text-[#6c5b4d] dark:text-[#D9C5B2] mb-8 font-manrope">Soothe Sanctuary</div>
+<p class="text-[#5c605c] dark:text-[#afb3ae] text-sm leading-relaxed mb-8">Crafting intentional spaces through the art of comfort and curated textures.</p>
+<div class="flex gap-4">
+<div class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center hover:bg-primary-container transition-colors cursor-pointer">
+<span class="material-symbols-outlined text-sm">public</span>
+</div>
+<div class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center hover:bg-primary-container transition-colors cursor-pointer">
+<span class="material-symbols-outlined text-sm">share</span>
+</div>
+</div>
+</div>
+<div>
+<h5 class="font-bold text-[#6c5b4d] mb-6 uppercase tracking-widest text-xs">Shop</h5>
+<ul class="space-y-4">
+<li><a class="text-[#5c605c] hover:text-[#6c5b4d] hover:translate-x-1 transition-transform duration-200 block text-sm" href="#">New Arrivals</a></li>
+<li><a class="text-[#5c605c] hover:text-[#6c5b4d] hover:translate-x-1 transition-transform duration-200 block text-sm" href="#">Best Sellers</a></li>
+<li><a class="text-[#5c605c] hover:text-[#6c5b4d] hover:translate-x-1 transition-transform duration-200 block text-sm" href="#">Gift Cards</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-bold text-[#6c5b4d] mb-6 uppercase tracking-widest text-xs">Service</h5>
+<ul class="space-y-4">
+<li><a class="text-[#5c605c] hover:text-[#6c5b4d] hover:translate-x-1 transition-transform duration-200 block text-sm" href="#">Shipping Policy</a></li>
+<li><a class="text-[#5c605c] hover:text-[#6c5b4d] hover:translate-x-1 transition-transform duration-200 block text-sm" href="#">Return Center</a></li>
+<li><a class="text-[#5c605c] hover:text-[#6c5b4d] hover:translate-x-1 transition-transform duration-200 block text-sm" href="#">Contact Support</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-bold text-[#6c5b4d] mb-6 uppercase tracking-widest text-xs">Newsletter</h5>
+<p class="text-[#5c605c] text-xs leading-relaxed mb-6">Join for 10% off your first sanctuary addition.</p>
+<div class="relative">
+<input class="w-full bg-surface/50 border-none rounded-full py-3 px-6 text-sm" placeholder="Email" type="text"/>
+<button class="absolute right-2 top-2 w-8 h-8 rounded-full bg-primary flex items-center justify-center text-on-primary">
+<span class="material-symbols-outlined text-xs">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<div class="px-12 py-10 border-t border-outline-variant/10 text-center text-xs text-[#5c605c] dark:text-[#afb3ae]">
+            © 2024 Soothe Sanctuary Interiors. All rights reserved.
+        </div>
+</footer>
+</body></html>
