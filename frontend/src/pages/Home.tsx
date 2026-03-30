@@ -1,12 +1,17 @@
-import { Typography } from 'antd';
-
-const { Title, Text } = Typography;
+import HeroSection from '../components/home/HeroSection';
+import CategoryBento from '../components/home/CategoryBento';
+import ProductGrid from '../components/home/ProductGrid';
+import Testimonial from '../components/home/Testimonial';
+import Newsletter from '../components/home/Newsletter';
 
 export default function Home() {
   return (
-    <div style={{ textAlign: 'center', padding: '80px 24px' }}>
-      <Title>Marketplace de Enxoval</Title>
-      <Text type="secondary">Em breve</Text>
-    </div>
+    <>
+      <HeroSection />
+      <CategoryBento />
+      <ProductGrid />
+      <Testimonial />
+      <Newsletter />
+    </>
   );
 }
