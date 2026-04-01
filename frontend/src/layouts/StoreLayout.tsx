@@ -1,108 +1,58 @@
 import { Outlet } from 'react-router-dom';
-import { Row, Col, Input, Button } from 'antd';
-import '../components/home/home.css';
 
 export default function StoreLayout() {
   return (
-    <>
-      {/* Navbar */}
-      <nav className="store-navbar">
-        <div className="store-navbar-inner">
-          <div className="store-navbar-logo">Soothe</div>
+    <div className="min-h-screen bg-surface">
+      {/* Floating Pill Navbar */}
+      <nav className="fixed top-4 left-1/2 -translate-x-1/2 w-[92%] max-w-7xl rounded-full bg-surface/80 backdrop-blur-xl shadow-[0_20px_40px_rgba(47,52,48,0.05)] z-50 flex justify-between items-center px-10 py-4">
+        <div className="font-headline text-2xl italic text-on-surface">Soothe</div>
 
-          <div className="store-navbar-links">
-            <a className="store-navbar-link active" href="#">Loja</a>
-            <a className="store-navbar-link" href="#">Coleções</a>
-            <a className="store-navbar-link" href="#">Mais Vendidos</a>
-            <a className="store-navbar-link" href="#">Sobre</a>
-          </div>
+        <div className="hidden md:flex items-center gap-10">
+          <a className="font-headline text-on-surface-variant hover:text-on-surface transition-colors duration-300 tracking-tight text-lg" href="#">
+            Loja
+          </a>
+          <a className="font-headline text-on-surface-variant hover:text-on-surface transition-colors duration-300 tracking-tight text-lg" href="#">
+            Materiais
+          </a>
+          <a className="font-headline text-on-surface-variant hover:text-on-surface transition-colors duration-300 tracking-tight text-lg" href="#">
+            Nossa Historia
+          </a>
+        </div>
 
-          <div className="store-navbar-icons">
-            <button style={{ background: 'none', border: 'none', cursor: 'pointer', color: 'inherit' }}>
-              <span className="material-symbols-outlined">person</span>
-            </button>
-            <button style={{ background: 'none', border: 'none', cursor: 'pointer', color: 'inherit' }}>
-              <span className="material-symbols-outlined">shopping_cart</span>
-            </button>
-          </div>
+        <div className="flex items-center gap-6 text-on-surface-variant">
+          <button className="hover:text-on-surface transition-colors duration-200 bg-transparent border-none cursor-pointer text-inherit">
+            <span className="material-symbols-outlined">search</span>
+          </button>
+          <button className="hover:text-on-surface transition-colors duration-200 bg-transparent border-none cursor-pointer text-inherit">
+            <span className="material-symbols-outlined">shopping_bag</span>
+          </button>
+          <button className="hover:text-on-surface transition-colors duration-200 bg-transparent border-none cursor-pointer text-inherit">
+            <span className="material-symbols-outlined">person</span>
+          </button>
         </div>
       </nav>
 
       {/* Page content */}
-      <main style={{ paddingTop: 96 }}>
+      <main className="pt-32 pb-20 px-6 max-w-[1600px] mx-auto">
         <Outlet />
       </main>
 
       {/* Footer */}
-      <footer className="store-footer">
-        <div className="store-footer-grid">
-          <Row gutter={[48, 48]}>
-            <Col xs={24} md={8}>
-              <div className="store-footer-brand">Soothe Sanctuary</div>
-              <p className="store-footer-description">
-                Criando espaços intencionais através da arte do conforto e texturas selecionadas.
-              </p>
-              <div className="store-footer-social">
-                <div className="store-footer-social-icon">
-                  <span className="material-symbols-outlined" style={{ fontSize: 14 }}>public</span>
-                </div>
-                <div className="store-footer-social-icon">
-                  <span className="material-symbols-outlined" style={{ fontSize: 14 }}>share</span>
-                </div>
-              </div>
-            </Col>
-
-            <Col xs={12} md={5}>
-              <div className="store-footer-heading">Loja</div>
-              <a className="store-footer-link" href="#">Novidades</a>
-              <a className="store-footer-link" href="#">Mais Vendidos</a>
-              <a className="store-footer-link" href="#">Cartões Presente</a>
-            </Col>
-
-            <Col xs={12} md={5}>
-              <div className="store-footer-heading">Atendimento</div>
-              <a className="store-footer-link" href="#">Política de Envio</a>
-              <a className="store-footer-link" href="#">Trocas e Devoluções</a>
-              <a className="store-footer-link" href="#">Fale Conosco</a>
-            </Col>
-
-            <Col xs={24} md={6}>
-              <div className="store-footer-heading">Newsletter</div>
-              <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.75rem', lineHeight: 1.7, marginBottom: 24 }}>
-                Cadastre-se e ganhe 10% de desconto na sua primeira compra.
-              </p>
-              <div style={{ position: 'relative' }}>
-                <Input
-                  placeholder="Email"
-                  style={{ paddingRight: 48 }}
-                />
-                <Button
-                  type="primary"
-                  shape="circle"
-                  size="small"
-                  style={{
-                    position: 'absolute',
-                    right: 4,
-                    top: '50%',
-                    transform: 'translateY(-50%)',
-                    width: 32,
-                    height: 32,
-                    minWidth: 32,
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                  }}
-                >
-                  <span className="material-symbols-outlined" style={{ fontSize: 14 }}>arrow_forward</span>
-                </Button>
-              </div>
-            </Col>
-          </Row>
+      <footer className="w-full rounded-t-[48px] mt-20 bg-surface-container flex flex-col md:flex-row justify-between items-center px-12 py-16">
+        <div className="mb-8 md:mb-0">
+          <div className="font-headline text-xl text-on-surface mb-2">Soothe Editorial.</div>
+          <p className="text-on-surface-variant text-sm tracking-wide">Conforto Restaurado.</p>
         </div>
-        <div className="store-footer-bottom">
-          © 2026 Soothe Sanctuary. Todos os direitos reservados.
+        <div className="flex flex-wrap justify-center gap-8 mb-8 md:mb-0">
+          <a className="text-on-surface-variant hover:text-on-surface transition-colors text-sm tracking-wide" href="#">Sustentabilidade</a>
+          <a className="text-on-surface-variant hover:text-on-surface transition-colors text-sm tracking-wide" href="#">Envio</a>
+          <a className="text-on-surface-variant hover:text-on-surface transition-colors text-sm tracking-wide" href="#">Trocas</a>
+          <a className="text-on-surface-variant hover:text-on-surface transition-colors text-sm tracking-wide" href="#">Privacidade</a>
+        </div>
+        <div className="text-on-surface-variant text-xs tracking-widest opacity-80">
+          &copy; 2026 Soothe Editorial. Conforto Restaurado.
         </div>
       </footer>
-    </>
+    </div>
   );
 }
