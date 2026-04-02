@@ -6,6 +6,7 @@ import ProtectedRoute from '../components/admin/ProtectedRoute';
 import AdminLayout from '../layouts/AdminLayout';
 import AdminDashboard from '../pages/AdminDashboard';
 import AdminProducts from '../pages/AdminProducts';
+import AdminProductForm from '../pages/AdminProductForm';
 import AdminOrders from '../pages/AdminOrders';
 import AdminSettings from '../pages/AdminSettings';
 import NotFound from '../pages/NotFound';
@@ -31,6 +32,8 @@ export const router = createBrowserRouter([
         children: [
           { index: true, element: <AdminDashboard /> },
           { path: 'produtos', element: <AdminProducts /> },
+          { path: 'produtos/novo', element: <AdminProductForm /> },
+          { path: 'produtos/:id', element: <AdminProductForm /> },
           { path: 'pedidos', element: <AdminOrders /> },
           { path: 'config', element: <AdminSettings /> },
         ],

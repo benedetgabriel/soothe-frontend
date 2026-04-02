@@ -33,12 +33,12 @@ export default function StoreLayout() {
       </nav>
 
       {/* Page content */}
-      <main className="pt-32 pb-20 px-6 max-w-[1600px] mx-auto">
+      <main className="pt-32 pb-20 px-6 max-w-7xl mx-auto">
         <Outlet />
       </main>
 
       {/* Footer */}
-      <footer className="w-full rounded-t-[48px] mt-20 bg-surface-container flex flex-col md:flex-row justify-between items-center px-12 py-16">
+      <footer className="max-w-7xl mx-auto rounded-t-[48px] mt-20 bg-surface-container flex flex-col md:flex-row justify-between items-center px-12 py-16">
         <div className="mb-8 md:mb-0">
           <div className="font-headline text-xl text-on-surface mb-2">Soothe Editorial.</div>
           <p className="text-on-surface-variant text-sm tracking-wide">Conforto Restaurado.</p>

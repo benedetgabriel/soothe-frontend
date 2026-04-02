@@ -11,6 +11,7 @@ const navItems = [
 const pageTitles: Record<string, string> = {
   '/admin': 'Dashboard',
   '/admin/produtos': 'Produtos',
+  '/admin/produtos/novo': 'Novo Produto',
   '/admin/pedidos': 'Pedidos',
   '/admin/config': 'Configuracoes',
 };
@@ -20,7 +21,9 @@ export default function AdminLayout() {
   const navigate = useNavigate();
   const location = useLocation();
 
-  const pageTitle = pageTitles[location.pathname] ?? 'Admin';
+  const pageTitle =
+    pageTitles[location.pathname] ??
+    (location.pathname.startsWith('/admin/produtos/') ? 'Editar Produto' : 'Admin');
 
   const handleLogout = () => {
     localStorage.removeItem('admin_token');
