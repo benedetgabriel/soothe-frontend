@@ -3,17 +3,19 @@ import { Outlet, NavLink, useNavigate, useLocation } from 'react-router-dom';
 
 const navItems = [
   { to: '/admin', label: 'Dashboard', icon: 'dashboard' },
+  { to: '/admin/home', label: 'Página Inicial', icon: 'home' },
   { to: '/admin/produtos', label: 'Produtos', icon: 'inventory_2' },
   { to: '/admin/pedidos', label: 'Pedidos', icon: 'shopping_bag' },
-  { to: '/admin/config', label: 'Configuracoes', icon: 'settings' },
+  { to: '/admin/config', label: 'Configurações', icon: 'settings' },
 ];
 
 const pageTitles: Record<string, string> = {
   '/admin': 'Dashboard',
+  '/admin/home': 'Página Inicial',
   '/admin/produtos': 'Produtos',
   '/admin/produtos/novo': 'Novo Produto',
   '/admin/pedidos': 'Pedidos',
-  '/admin/config': 'Configuracoes',
+  '/admin/config': 'Configurações',
 };
 
 export default function AdminLayout() {

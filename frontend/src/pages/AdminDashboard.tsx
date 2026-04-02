@@ -59,7 +59,7 @@ export default function AdminDashboard() {
         </span>
         <p className="font-headline text-lg text-on-surface mb-1">Em breve</p>
         <p className="text-sm text-on-surface-variant">
-          Graficos de vendas, tabela de pedidos recentes e mais.
+          Gráficos de vendas, tabela de pedidos recentes e mais.
         </p>
       </div>
     </div>

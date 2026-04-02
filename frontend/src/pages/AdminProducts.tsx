@@ -1,6 +1,7 @@
 import { useState, useMemo } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { mockProducts } from '../mocks/catalog';
+import { formatCurrency } from '../lib/product-helpers';
 import type { Product } from '../types/catalog';
 import AdminCategories from './AdminCategories';
 import AdminTags from './AdminTags';
@@ -12,10 +13,6 @@ const tabs: { key: Tab; label: string; icon: string }[] = [
   { key: 'categorias', label: 'Categorias', icon: 'category' },
   { key: 'tags', label: 'Tags', icon: 'label' },
 ];
-
-function formatCurrency(value: number) {
-  return value.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
-}
 
 function getPriceRange(product: Product) {
   const prices = product.variants.filter((v) => v.isActive).map((v) => v.price);
@@ -129,7 +126,7 @@ export default function AdminProducts() {
                   <th className="font-medium px-6 py-4">Produto</th>
                   <th className="font-medium px-4 py-4">Status</th>
                   <th className="font-medium px-4 py-4">Variantes</th>
-                  <th className="font-medium px-4 py-4">Preco</th>
+                  <th className="font-medium px-4 py-4">Preço</th>
                   <th className="font-medium px-4 py-4">Estoque</th>
                   <th className="font-medium px-4 py-4 w-12"></th>
                 </tr>

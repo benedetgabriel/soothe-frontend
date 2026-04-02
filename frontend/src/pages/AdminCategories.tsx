@@ -182,13 +182,13 @@ export default function AdminCategories() {
             {/* Description */}
             <div>
               <label className="block text-xs font-medium tracking-wide text-on-surface-variant mb-1.5 uppercase">
-                Descricao
+                Descrição
               </label>
               <textarea
                 value={form.description}
                 onChange={(e) => setForm({ ...form, description: e.target.value })}
                 rows={2}
-                placeholder="Descricao curta da categoria"
+                placeholder="Descrição curta da categoria"
                 className="w-full px-4 py-3 rounded-xl bg-surface-container-high text-on-surface text-sm border-none outline-none placeholder:text-on-surface-variant/40 focus:bg-surface-container-highest transition-colors duration-200 resize-none"
               />
             </div>

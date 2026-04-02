@@ -1,22 +1,35 @@
-import { Outlet } from 'react-router-dom';
+import { Outlet, Link, useLocation } from 'react-router-dom';
 
 export default function StoreLayout() {
+  const location = useLocation();
+
+  const navLinks = [
+    { to: '/', label: 'Loja' },
+    { to: '/produtos', label: 'Produtos' },
+    { to: '#', label: 'Materiais' },
+    { to: '#', label: 'Nossa História' },
+  ];
+
   return (
     <div className="min-h-screen bg-surface">
       {/* Floating Pill Navbar */}
       <nav className="fixed top-4 left-1/2 -translate-x-1/2 w-[92%] max-w-7xl rounded-full bg-surface/80 backdrop-blur-xl shadow-[0_20px_40px_rgba(47,52,48,0.05)] z-50 flex justify-between items-center px-10 py-4">
-        <div className="font-headline text-2xl italic text-on-surface">Soothe</div>
+        <Link to="/" className="font-headline text-2xl italic text-on-surface no-underline">Soothe</Link>
 
         <div className="hidden md:flex items-center gap-10">
-          <a className="font-headline text-on-surface-variant hover:text-on-surface transition-colors duration-300 tracking-tight text-lg" href="#">
-            Loja
-          </a>
-          <a className="font-headline text-on-surface-variant hover:text-on-surface transition-colors duration-300 tracking-tight text-lg" href="#">
-            Materiais
-          </a>
-          <a className="font-headline text-on-surface-variant hover:text-on-surface transition-colors duration-300 tracking-tight text-lg" href="#">
-            Nossa Historia
-          </a>
+          {navLinks.map((link) => (
+            <Link
+              key={link.label}
+              to={link.to}
+              className={`font-headline transition-colors duration-300 tracking-tight text-lg no-underline ${
+                location.pathname === link.to
+                  ? 'text-on-surface'
+                  : 'text-on-surface-variant hover:text-on-surface'
+              }`}
+            >
+              {link.label}
+            </Link>
+          ))}
         </div>
 
         <div className="flex items-center gap-6 text-on-surface-variant">

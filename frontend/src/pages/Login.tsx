@@ -34,7 +34,7 @@ export default function Login() {
             Soothe
           </h1>
           <p className="text-on-primary/60 text-lg font-light leading-relaxed max-w-sm">
-            Gerencie seu marketplace de conforto com simplicidade e elegancia.
+            Gerencie seu marketplace de conforto com simplicidade e elegância.
           </p>
         </div>
       </div>
@@ -64,7 +64,7 @@ export default function Login() {
                 required: 'Informe seu e-mail',
                 pattern: {
                   value: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
-                  message: 'E-mail invalido',
+                  message: 'E-mail inválido',
                 },
               })}
             />
@@ -84,7 +84,7 @@ export default function Login() {
 
           <div className="text-center mt-8">
             <a href="/" className="text-on-surface-variant text-sm hover:text-on-surface transition-colors">
-              &larr; Voltar a loja
+              &larr; Voltar à loja
             </a>
           </div>
         </div>

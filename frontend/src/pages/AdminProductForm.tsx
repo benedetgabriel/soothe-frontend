@@ -1,20 +1,17 @@
 import { useState, useMemo } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { mockProducts, mockCategories, mockTags } from '../mocks/catalog';
+import { formatCurrency } from '../lib/product-helpers';
 import type { ProductVariant, ProductImage } from '../types/catalog';
 
 type Section = 'info' | 'variantes' | 'imagens' | 'categorias';
 
 const sections: { key: Section; label: string; icon: string }[] = [
-  { key: 'info', label: 'Informacoes', icon: 'info' },
+  { key: 'info', label: 'Informações', icon: 'info' },
   { key: 'variantes', label: 'Variantes', icon: 'view_list' },
   { key: 'imagens', label: 'Imagens', icon: 'image' },
   { key: 'categorias', label: 'Categorias & Tags', icon: 'category' },
 ];
-
-function formatCurrency(value: number) {
-  return value.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
-}
 
 function slugify(text: string) {
   return text
@@ -196,7 +193,7 @@ export default function AdminProductForm() {
                 type="text"
                 value={name}
                 onChange={(e) => handleNameChange(e.target.value)}
-                placeholder="Ex: Jogo de Lencol Percal 400 Fios"
+                placeholder="Ex: Jogo de Lençol Percal 400 Fios"
                 className="w-full h-12 px-5 rounded-xl bg-surface-container-high text-on-surface border-none outline-none placeholder:text-on-surface-variant/40 focus:bg-surface-container-highest transition-colors duration-200"
               />
             </div>
@@ -232,7 +229,7 @@ export default function AdminProductForm() {
             {/* Short description */}
             <div className="md:col-span-2">
               <label className="block text-xs font-medium tracking-wide text-on-surface-variant mb-1.5 uppercase">
-                Descricao Curta
+                Descrição Curta
               </label>
               <input
                 type="text"
@@ -246,13 +243,13 @@ export default function AdminProductForm() {
             {/* Description */}
             <div className="md:col-span-2">
               <label className="block text-xs font-medium tracking-wide text-on-surface-variant mb-1.5 uppercase">
-                Descricao Completa
+                Descrição Completa
               </label>
               <textarea
                 value={description}
                 onChange={(e) => setDescription(e.target.value)}
                 rows={4}
-                placeholder="Descricao detalhada do produto..."
+                placeholder="Descrição detalhada do produto..."
                 className="w-full px-5 py-4 rounded-xl bg-surface-container-high text-on-surface border-none outline-none placeholder:text-on-surface-variant/40 focus:bg-surface-container-highest transition-colors duration-200 resize-none"
               />
             </div>
@@ -301,7 +298,7 @@ export default function AdminProductForm() {
                   <tr className="text-left text-on-surface-variant">
                     <th className="font-medium px-6 py-3.5">Variante</th>
                     <th className="font-medium px-4 py-3.5">SKU</th>
-                    <th className="font-medium px-4 py-3.5">Preco</th>
+                    <th className="font-medium px-4 py-3.5">Preço</th>
                     <th className="font-medium px-4 py-3.5">Estoque</th>
                     <th className="font-medium px-4 py-3.5">Status</th>
                     <th className="font-medium px-4 py-3.5 w-24"></th>
@@ -379,7 +376,7 @@ export default function AdminProductForm() {
                 Nenhuma variante adicionada
               </p>
               <p className="text-on-surface-variant/60 text-xs mt-1">
-                Variantes definem preco, estoque e opcoes do produto (ex: tamanho, cor)
+                Variantes definem preço, estoque e opções do produto (ex: tamanho, cor)
               </p>
             </div>
           )}
@@ -426,7 +423,7 @@ export default function AdminProductForm() {
                 {/* Price */}
                 <div>
                   <label className="block text-xs font-medium tracking-wide text-on-surface-variant mb-1.5 uppercase">
-                    Preco
+                    Preço
                   </label>
                   <input
                     type="number"
@@ -442,7 +439,7 @@ export default function AdminProductForm() {
                 {/* Compare at price */}
                 <div>
                   <label className="block text-xs font-medium tracking-wide text-on-surface-variant mb-1.5 uppercase">
-                    Preco Comparativo
+                    Preço Comparativo
                   </label>
                   <input
                     type="number"
@@ -730,7 +727,7 @@ export default function AdminProductForm() {
           onClick={handleSave}
           className="h-11 px-8 rounded-xl bg-primary text-on-primary text-sm font-medium border-none cursor-pointer transition-all duration-200 hover:bg-primary-dim"
         >
-          {isNew ? 'Criar Produto' : 'Salvar Alteracoes'}
+          {isNew ? 'Criar Produto' : 'Salvar Alterações'}
         </button>
       </div>
     </div>
