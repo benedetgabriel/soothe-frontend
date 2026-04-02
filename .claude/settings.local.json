@@ -1,20 +1,10 @@
 {
   "permissions": {
     "allow": [
-      "Bash(cd:*)",
-      "Bash(rm -f WeatherForecast.cs MarketplaceEnxoval.http)",
-      "Bash(rm -f Controllers/WeatherForecastController.cs)",
-      "Bash(mkdir -p Services/Interfaces Repositories/Interfaces Models DTOs/Requests DTOs/Responses Data Middleware Extensions Exceptions Helpers)",
-      "Bash(dotnet:*)",
-      "Bash(npm create:*)",
-      "Bash(npm install:*)",
-      "Bash(mkdir -p components pages layouts hooks services styles types utils routes)",
-      "Bash(rm -f App.css index.css assets/react.svg)",
-      "Bash(npx tsc:*)",
-      "Bash(netstat -ano)",
+      "Bash(ls \"C:/Users/gabri/OneDrive/Desktop/project/frontend/\"*.png)",
+      "Bash(git -C \"C:/Users/gabri/OneDrive/Desktop/project/frontend\" status --short -- \"*.png\")",
       "Bash(npx vite:*)",
-      "Bash(xargs -r -I{} taskkill //PID {} //F)",
-      "Bash(find C:/Users/gabri/OneDrive/Desktop/project -not -path */node_modules/* -not -path */bin/* -not -path */obj/* -type d)"
+      "WebFetch(domain:localhost)"
     ]
   }
 }

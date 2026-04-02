@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Home: Galeria Interativa | LUNA</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Playfair+Display:ital,wght@0,400;0,700;1,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#625e55",
+              "on-secondary-fixed": "#3e403e",
+              "on-secondary-container": "#515250",
+              "surface-container": "#edeeea",
+              "tertiary-container": "#f1f8cb",
+              "surface-container-high": "#e6e9e4",
+              "on-primary-container": "#555148",
+              "background": "#faf9f6",
+              "tertiary-fixed-dim": "#e3e9bd",
+              "on-surface-variant": "#5c605c",
+              "on-primary-fixed": "#433f36",
+              "tertiary-fixed": "#f1f8cb",
+              "on-background": "#2f3430",
+              "surface-container-highest": "#e0e4de",
+              "primary-fixed": "#e9e2d6",
+              "surface-dim": "#d6dbd5",
+              "inverse-primary": "#fdf6e9",
+              "surface": "#faf9f6",
+              "primary-fixed-dim": "#dad4c8",
+              "surface-tint": "#625e55",
+              "secondary-fixed": "#e3e2e0",
+              "error-container": "#fe8b70",
+              "surface-container-lowest": "#ffffff",
+              "on-tertiary-fixed-variant": "#636946",
+              "inverse-surface": "#0d0f0d",
+              "tertiary": "#5c623f",
+              "surface-variant": "#e0e4de",
+              "on-secondary": "#faf9f6",
+              "on-primary-fixed-variant": "#5f5b52",
+              "on-secondary-fixed-variant": "#5b5c5a",
+              "primary-container": "#e9e2d6",
+              "on-tertiary-fixed": "#474d2c",
+              "secondary-container": "#e3e2e0",
+              "on-tertiary-container": "#595f3c",
+              "on-tertiary": "#f7fdd0",
+              "error-dim": "#5c1202",
+              "outline": "#777c77",
+              "inverse-on-surface": "#9d9d9a",
+              "surface-bright": "#faf9f6",
+              "error": "#9e422c",
+              "on-error": "#fff7f6",
+              "tertiary-dim": "#505634",
+              "secondary": "#5e5f5d",
+              "on-surface": "#2f3430",
+              "primary-dim": "#565249",
+              "surface-container-low": "#f4f4f0",
+              "outline-variant": "#afb3ae",
+              "on-primary": "#fef7ea",
+              "on-error-container": "#742410",
+              "secondary-dim": "#525351",
+              "secondary-fixed-dim": "#d5d4d2"
+            },
+            fontFamily: {
+              "headline": ["Playfair Display", "serif"],
+              "body": ["Inter", "sans-serif"],
+              "label": ["Inter", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        body {
+            background-color: #faf9f6;
+            color: #2f3430;
+            -webkit-font-smoothing: antialiased;
+        }
+    </style>
+</head>
+<body class="font-body selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar (Shared Component) -->
+<nav class="fixed top-4 left-1/2 -translate-x-1/2 w-[92%] rounded-full bg-stone-50/80 dark:bg-stone-900/80 backdrop-blur-xl shadow-[0_20px_40px_rgba(47,52,48,0.05)] z-50 flex justify-between items-center px-10 py-4 max-w-7xl">
+<div class="font-serif text-2xl italic text-stone-800 dark:text-stone-100">LUNA</div>
+<div class="hidden md:flex items-center space-x-10">
+<a class="text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-100 transition-colors duration-300 font-serif tracking-tight text-lg" href="#">Shop All</a>
+<a class="text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-100 transition-colors duration-300 font-serif tracking-tight text-lg" href="#">Materials</a>
+<a class="text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-100 transition-colors duration-300 font-serif tracking-tight text-lg" href="#">Our Story</a>
+</div>
+<div class="flex items-center space-x-6 text-stone-700 dark:text-stone-300">
+<button class="hover:text-stone-900 transition-colors scale-95 duration-200 ease-out">
+<span class="material-symbols-outlined">search</span>
+</button>
+<button class="hover:text-stone-900 transition-colors scale-95 duration-200 ease-out">
+<span class="material-symbols-outlined">shopping_bag</span>
+</button>
+<button class="hover:text-stone-900 transition-colors scale-95 duration-200 ease-out">
+<span class="material-symbols-outlined">person</span>
+</button>
+</div>
+</nav>
+<!-- Main Content Canvas -->
+<main class="pt-32 pb-20 px-6 max-w-[1600px] mx-auto">
+<!-- Header Section -->
+<header class="mb-16 md:mb-24 text-center">
+<h1 class="font-headline text-5xl md:text-7xl lg:text-8xl text-on-background leading-tight mb-6">
+                Home: Galeria Interativa
+            </h1>
+<p class="max-w-2xl mx-auto text-on-surface-variant text-lg md:text-xl font-light tracking-wide leading-relaxed">
+                A curation of restorative textures and sculptural forms. Explore our pillows as pieces of functional art designed for the sanctuary of rest.
+            </p>
+</header>
+<!-- Asymmetric Interactive Gallery (Bento-inspired Masonry) -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8 lg:gap-12">
+<!-- Large Focus Piece -->
+<div class="md:col-span-8 group cursor-pointer">
+<div class="relative overflow-hidden rounded-xl bg-surface-container-high h-[500px] md:h-[700px] transition-transform duration-700 ease-out hover:scale-[1.01]">
+<img class="w-full h-full object-cover transition-scale duration-1000 group-hover:scale-110" data-alt="close-up of a premium oversized ivory linen pillow resting on a light beige textured sofa with soft sunlight casting gentle shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAH4OPYc_orbndkRgM2vyUciIXfl8NVWeCltvgSEFdkl2fYbuV9Kd8R_CemUuHgtENWWfcBBHqWkYU5EicyzTldPmthBThRug2m6uMS_0RTmTVWOJZagtOTBAmAqdzrNlqapA4stbf1m5VeGfDXDnex_5alQ4y59ihf4F_4XyamIBw7WrY6e69--yK0NEI2LY8nI-WRWWn_qqo51eSKyjcLJwlo4iF5TScMHkmU2oYrDmCVhrq4aOy2ALFDcSHa0FXvZJ4UnP9oI8Ct"/>
+<div class="absolute bottom-10 left-10 text-on-surface">
+<span class="text-xs uppercase tracking-widest font-semibold mb-2 block opacity-60">The Master Series</span>
+<h3 class="font-headline text-3xl md:text-4xl italic">Cloud Silk Lumbar</h3>
+</div>
+</div>
+</div>
+<!-- Tall Secondary Piece -->
+<div class="md:col-span-4 flex flex-col gap-8 lg:gap-12">
+<div class="group cursor-pointer">
+<div class="relative overflow-hidden rounded-xl bg-surface-container-highest h-[400px] transition-transform duration-700 ease-out hover:scale-[1.01]">
+<img class="w-full h-full object-cover transition-scale duration-1000 group-hover:scale-110" data-alt="vertical shot of a stack of folded high-quality linen pillows in neutral earthy tones from charcoal to soft cream" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQn2T82PP8t89f4ZFGUmwdTBDIgVqRPe9pGrjP4oAGbJ8WSb8TnZZJtE_jpRRrmypkgKRtMnucLevgWS97zbFyBSCp7n13jPA59n1SpgxAGXOPmMgSXuNoCrBS08eqaPcd-gB64LRmvL5Iz85yeBFGEU7qQ_VWAK2MEv7zPP3W4dlFSz_XRm3hXdP7BqwRX2tOC36hfAzirRAq9SXRd_BRCPs8GScVfKlbW0jYRq8mnZx9WndPSq826loXPDOs2TeSF1SK4xRy6AzS"/>
+</div>
+<div class="mt-4 px-2">
+<p class="font-headline text-xl">Heritage Weave</p>
+<p class="text-on-surface-variant text-sm tracking-wide">Hand-spun organic cotton</p>
+</div>
+</div>
+<div class="group cursor-pointer">
+<div class="relative overflow-hidden rounded-xl bg-surface-container h-[260px] transition-transform duration-700 ease-out hover:scale-[1.01]">
+<img class="w-full h-full object-cover transition-scale duration-1000 group-hover:scale-110" data-alt="close-up detail of the corner of a textured sage green pillow showing intricate stitching and a premium fabric weave" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD8z2ccSTmz9ruIjgsh3H8I5gPw1wgCw-RbgVwnQwcugOFveMMEZGljbNFU_leScLPTPTXKS0wTEXyhFqy3eFGr3FdmEk9kOdt2Ow_DgAeYTT7Lqoz5K2nhCVmy-XCg4As63reHhADCLUvFYBRDTh2XsfuFoqPqq6oZo7qxPF-nSLBWa3-048RCjIDtym7RgmPTxYAHk8P9Lyhb6lOcO6TLNqyPwpxYgCbDE_Y_mC-B4X0kDQis0R8wcMCqn-PA25kWSbQgAl6fr42C"/>
+</div>
+</div>
+</div>
+<!-- Dynamic Third Row -->
+<div class="md:col-span-4 group cursor-pointer">
+<div class="relative overflow-hidden rounded-xl bg-surface-container-low h-[500px] transition-transform duration-700 ease-out hover:scale-[1.01]">
+<img class="w-full h-full object-cover transition-scale duration-1000 group-hover:scale-110" data-alt="minimalist bedroom setting with a single circular decorative pillow in a deep ochre velvet finish on a minimalist bed frame" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB7ry3Ct1G7hhqmlDcf24VcUS5d9eThS5C9eDk7kYA2vCWXTk2cppvT6yMYl6nZoWNFUOzfTPA2RsHcTBSiQfF21XJEwzDmTngbJZKulVWzUGWSGfFdgDRGwAK6LGRJ0lKbSueNG_vm2rLjV6yjfMMyq-e-b3mU_AkRb-D4sy9cuYiEMmiNKchkeqULlU6xp0bA3ZLnZqMxYUHo7je5Gk8z3xkvyDB5Laap_0hOSA4e6U1AG2ZGHVo9VEiMvqq7kD7dODOjiVO_KqUL"/>
+<div class="absolute inset-0 bg-black/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+</div>
+</div>
+<div class="md:col-span-8 group cursor-pointer">
+<div class="relative overflow-hidden rounded-xl bg-surface-container-high h-[500px] transition-transform duration-700 ease-out hover:scale-[1.01]">
+<img class="w-full h-full object-cover transition-scale duration-1000 group-hover:scale-110" data-alt="wide shot of a sunlit living room with several different textured pillows arranged artistically on a curved bouclé sofa" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_12EJlJbSl7-UpL08AegNG8UMQ3E1HTkvs3uUA88snRzRNt0c5ERlT5AptGIAoVY3WXYf9Paav3Kq4Vlsw_pcW__vcpnqLTJEIUs0_rRlCUtGyuf1yrs5tHCfi-74NR8YOOjhz35P2V6eaNbupTIoauyQacmQbD05A0PgnV0Zxtsz2bj6ixUoSY9wrZt6zC_2ithK5FImGJEGUub8LK11Do4sDSYg0k5ipVXtMl-CSsIm4u4_GpvqFNTDGPWOmqzDL2FWP_74HmTY"/>
+<div class="absolute top-10 right-10 text-right">
+<span class="text-xs uppercase tracking-widest font-semibold mb-2 block opacity-60">Limited Edition</span>
+<h3 class="font-headline text-3xl">The Ensemble</h3>
+</div>
+</div>
+</div>
+<!-- Floating Text Block (Asymmetry) -->
+<div class="md:col-span-5 md:col-start-2 py-12 md:py-24">
+<p class="font-headline text-4xl lg:text-5xl leading-tight text-on-surface">
+                    "Comfort is not merely a physical sensation, but a mental state of absolute <span class="italic">stillness</span>."
+                </p>
+<div class="w-20 h-px bg-primary mt-8"></div>
+</div>
+<!-- Final Gallery Pieces -->
+<div class="md:col-span-6 group cursor-pointer md:mt-12">
+<div class="relative overflow-hidden rounded-xl bg-surface-container h-[400px] transition-transform duration-700 ease-out hover:scale-[1.01]">
+<img class="w-full h-full object-cover transition-scale duration-1000 group-hover:scale-110" data-alt="macro photograph of silk fibers in a pillow showing shimmering texture and high-end manufacturing detail" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBAb3j2AQpgXb0AiUx26v-cNj-Xl9xIzhOp6KxmJnPd5gwu8N816kb2md6Lj7zNRU1ClxaP_Jcm5OS18fNlO4gTzXaXcrqbJkW3DH2tqH-2HprzswZiR_1KsIOEMe8g0TyqZc2H7MWiyXACIEJQsQQhOf7ceB-CrHdkKQlmnP6DwwbO2MjjW0TeLJMsti1DxHhkoxL8wXhduAGsFrmKLuF4PaqUNdzlyhdBFTW4oCOEcZb-d0CJy-xfqJrP9zBJtZ3ZDqSYIMHmGbxT"/>
+</div>
+</div>
+</div>
+<!-- Featured Collections CTA -->
+<section class="mt-32 text-center">
+<h2 class="font-headline text-4xl mb-10">Curated for You</h2>
+<div class="flex flex-wrap justify-center gap-4">
+<button class="bg-primary text-on-primary px-10 py-5 rounded-full font-medium shadow-sm hover:bg-primary-dim transition-all duration-300">
+                    Explore All Pieces
+                </button>
+<button class="bg-primary-container text-on-primary-container px-10 py-5 rounded-full font-medium hover:bg-surface-container-highest transition-all duration-300">
+                    Material Story
+                </button>
+</div>
+</section>
+</main>
+<!-- Footer (Shared Component) -->
+<footer class="w-full rounded-t-[48px] mt-20 bg-stone-100 dark:bg-stone-950 flex flex-col md:flex-row justify-between items-center px-12 py-16 w-full">
+<div class="mb-8 md:mb-0">
+<div class="font-serif text-xl text-stone-800 dark:text-stone-200 mb-2">LUNA Editorial.</div>
+<p class="text-stone-600 dark:text-stone-400 font-sans text-sm tracking-wide">Restored Comfort.</p>
+</div>
+<div class="flex flex-wrap justify-center gap-8 mb-8 md:mb-0">
+<a class="text-stone-500 dark:text-stone-400 hover:text-stone-800 dark:hover:text-stone-200 transition-all font-sans text-sm tracking-wide" href="#">Sustainability</a>
+<a class="text-stone-500 dark:text-stone-400 hover:text-stone-800 dark:hover:text-stone-200 transition-all font-sans text-sm tracking-wide" href="#">Shipping</a>
+<a class="text-stone-500 dark:text-stone-400 hover:text-stone-800 dark:hover:text-stone-200 transition-all font-sans text-sm tracking-wide" href="#">Returns</a>
+<a class="text-stone-500 dark:text-stone-400 hover:text-stone-800 dark:hover:text-stone-200 transition-all font-sans text-sm tracking-wide" href="#">Privacy</a>
+</div>
+<div class="text-stone-600 dark:text-stone-400 font-sans text-xs tracking-widest opacity-80">
+            © 2024 LUNA Editorial. Restored Comfort.
+        </div>
+</footer>
+</body></html>
